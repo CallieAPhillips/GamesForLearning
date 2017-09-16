@@ -39,15 +39,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+        mTextMessage = (TextView) findViewById(R.id.message); //"Color Theory" textbox
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
     public void startGame(View view){
-        Intent intent = new Intent(this, Game.class);
-        //finish();
-        startActivity(intent);
+        Intent intentToStartGameActivity = new Intent(this, Game.class);
+        //finish(); //will close the main activity/start screen
+        startActivity(intentToStartGameActivity); //opens Game activity/screen
     }
+
+    public void startSettings(View view){
+        Intent intentToStartSettingsActivity = new Intent(this, SettingsActivity.class);
+        startActivity(intentToStartSettingsActivity); //opens settings activity/screen
+    }
+
 
 }
