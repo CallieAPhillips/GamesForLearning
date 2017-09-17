@@ -123,6 +123,16 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         setupActionBar();
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+    }
+
     /**
      * Set up the {@link android.app.ActionBar}, if the API is available.
      */

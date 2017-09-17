@@ -44,12 +44,24 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+    }
+
+    //starts the Game Activity/screen. Called by the onClick method in main activity xml
     public void startGame(View view){
         Intent intentToStartGameActivity = new Intent(this, Game.class);
         //finish(); //will close the main activity/start screen
         startActivity(intentToStartGameActivity); //opens Game activity/screen
     }
 
+    //starts the Settings Activty/screen. Called by the onClick method in main activity xml
     public void startSettings(View view){
         Intent intentToStartSettingsActivity = new Intent(this, SettingsActivity.class);
         startActivity(intentToStartSettingsActivity); //opens settings activity/screen
