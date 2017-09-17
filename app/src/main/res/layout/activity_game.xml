@@ -8,23 +8,69 @@
     android:orientation="vertical"
     tools:context="com.example.student.gamesforlearning.Game">
 
-    <FrameLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
+        <ImageButton
+            android:id="@+id/colorResultButton"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581"
+            app:srcCompat="@color/red" />
+
         <TextView
             android:id="@+id/message"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="@string/title_home" />
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/title_home"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_editor_absoluteX="29dp" />
 
-    </FrameLayout>
+        <ImageButton
+            android:id="@+id/colorButton1"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/colorButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.213"
+            app:srcCompat="@color/red" />
+
+        <ImageButton
+            android:id="@+id/colorButton2"
+            android:layout_width="76dp"
+            android:layout_height="69dp"
+            app:srcCompat="@color/red"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.213"
+            android:layout_marginRight="84dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
