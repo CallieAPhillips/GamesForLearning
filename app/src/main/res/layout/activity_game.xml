@@ -16,18 +16,20 @@
 
         <ImageButton
             android:id="@+id/colorResultButton"
-            android:layout_width="76dp"
-            android:layout_height="69dp"
+            android:layout_width="84dp"
+            android:layout_height="72dp"
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="blendColors"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.581"
-            app:srcCompat="@color/red" />
+            app:layout_constraintVertical_bias="0.585"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/message"
@@ -39,7 +41,8 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_constraintRight_creator="1"
             tools:layout_constraintTop_creator="1"
-            tools:layout_editor_absoluteX="29dp" />
+            tools:layout_editor_absoluteX="29dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/colorButton1"
@@ -49,26 +52,28 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:background="@color/red"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/colorButton2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.213"
-            app:srcCompat="@color/red" />
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/colorButton2"
             android:layout_width="76dp"
             android:layout_height="69dp"
-            app:srcCompat="@color/red"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="8dp"
+            android:layout_marginRight="86dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.213"
-            android:layout_marginRight="84dp"
-            app:layout_constraintRight_toRightOf="parent" />
+            tools:ignore="ContentDescription,RtlHardcoded" />
 
     </android.support.constraint.ConstraintLayout>
 
