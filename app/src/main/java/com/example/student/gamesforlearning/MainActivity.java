@@ -67,5 +67,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentToStartSettingsActivity); //opens settings activity/screen
     }
 
+    //starts the Timer Activty/screen. Called by the onClick method in main activity xml
+    public void startTimerActivity(View view){
+        Intent intentToStartSettingsActivity = new Intent(this, Timer.class);
+        startActivity(intentToStartSettingsActivity); //opens settings activity/screen
+    }
 
 }

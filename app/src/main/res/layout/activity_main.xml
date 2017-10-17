@@ -132,6 +132,22 @@
             android:layout_marginEnd="8dp"
             tools:ignore="HardcodedText" />
 
+        <Button
+            android:id="@+id/TimerButton"
+            android:onClick="startTimerActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.064" />
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.design.widget.BottomNavigationView

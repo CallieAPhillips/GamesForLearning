@@ -52,7 +52,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            android:background="@color/red"
+            android:background="@color/gray_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.439"
             app:layout_constraintLeft_toLeftOf="parent"
